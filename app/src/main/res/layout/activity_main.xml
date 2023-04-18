@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido, ingresa tus credenciales:"
+            android:textSize="24sp"
+            android:layout_marginTop="32dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de usuario"
+            android:layout_below="@+id/textview_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"/>
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_below="@+id/edittext_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:layout_below="@+id/edittext_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
